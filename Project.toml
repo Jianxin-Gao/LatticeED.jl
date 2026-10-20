@@ -1,0 +1,30 @@
+name = "LatticeED"
+uuid = "173c32d1-487b-4093-9850-b898de21972b"
+authors = ["Jianxin-Gao <jxgao@buaa.edu.cn>", "contributors"]
+version = "0.3.0"
+
+[deps]
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+FiniteLattices = "650210df-7c64-40ac-8e1f-94ea4f378b07"
+JLD2 = "033835bb-8acc-5ee8-8aae-3f567f8a3819"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+Logging = "56ddb016-857b-54e1-b83d-db4d58db5568"
+Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
+SHA = "ea8e919c-243c-51af-8825-aaa63cd721ce"
+
+[compat]
+julia = "1.11"
+FiniteLattices = "=2.2.0"
+JLD2 = "0.6.4"
+LinearAlgebra = "1.11.0"
+Random = "1.11.0"
+SparseArrays = "1.11.0"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]

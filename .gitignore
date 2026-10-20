@@ -1,0 +1,26 @@
+.DS_Store
+**/.DS_Store
+.vscode/
+# Generated calculations, including reference results and intermediate records.
+data/
+results/
+checkpoints/
+logs/
+*.jld
+*.jld2
+*.log
+# Environments are resolved from Project.toml; actual versions enter run metadata.
+Manifest.toml
+Manifest-v*.toml
+# Local production work and machine-specific configuration stay on this machine.
+/benchmarks/
+/servers/
+/server/
+/cluster/
+/deployment/
+/config/local/
+*.sbatch
+*.slurm
+.env
+.env.*
+.ssh/

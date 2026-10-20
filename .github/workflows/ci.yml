@@ -1,0 +1,17 @@
+name: Core numerical tests
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      JULIA_NUM_THREADS: '1'
+      OPENBLAS_NUM_THREADS: 1
+    steps:
+      - uses: actions/checkout@v4
+      - uses: julia-actions/setup-julia@v2
+        with:
+          version: '1.11'
+      - uses: julia-actions/cache@v2
+      - name: Run core numerical tests (at most four sites)
+        run: julia --project=. -e 'using Pkg; Pkg.instantiate(); Pkg.test()'

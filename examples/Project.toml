@@ -1,0 +1,9 @@
+[deps]
+LatticeED = "173c32d1-487b-4093-9850-b898de21972b"
+
+[compat]
+julia = "1.11"
+LatticeED = "0.3"
+
+[sources]
+LatticeED = {path = ".."}
